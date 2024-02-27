@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "calmoverse:block/geyser_bottom",
+    "up": "calmoverse:block/geyser_top",
+    "north": "calmoverse:block/geyser",
+    "east": "calmoverse:block/geyser",
+    "south": "calmoverse:block/geyser",
+    "west": "calmoverse:block/geyser",
+    "particle": "calmoverse:block/geyser"
+  },
+  "render_type": "solid"
+}

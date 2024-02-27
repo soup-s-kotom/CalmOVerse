@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "calmoverse:block/soul_maple_top",
+    "up": "calmoverse:block/soul_maple_top",
+    "north": "calmoverse:block/soul_maple_log",
+    "east": "calmoverse:block/soul_maple_log",
+    "south": "calmoverse:block/soul_maple_log",
+    "west": "calmoverse:block/soul_maple_log",
+    "particle": "calmoverse:block/soul_maple_log"
+  },
+  "render_type": "solid"
+}

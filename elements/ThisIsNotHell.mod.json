@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "it_is_not_hell2.png",
+    "width": 32,
+    "height": 16,
+    "title": "This is not hell",
+    "author": "Kotonator"
+  }
+}

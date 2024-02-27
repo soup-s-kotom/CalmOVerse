@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "calmoverse:block/stripped_burnedwood_log",
+    "up": "calmoverse:block/stripped_burnedwood_log",
+    "north": "calmoverse:block/stripped_burnedwood_log",
+    "east": "calmoverse:block/stripped_burnedwood_log",
+    "south": "calmoverse:block/stripped_burnedwood_log",
+    "west": "calmoverse:block/stripped_burnedwood_log",
+    "particle": "calmoverse:block/stripped_burnedwood_log"
+  },
+  "render_type": "solid"
+}

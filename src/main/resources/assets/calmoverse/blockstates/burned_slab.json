@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "calmoverse:block/burned_slab"
+    },
+    "type=top": {
+      "model": "calmoverse:block/burned_slab_top"
+    },
+    "type=double": {
+      "model": "calmoverse:block/burned_slab_full"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_right",
+  "textures": {
+    "particle": "calmoverse:block/warped_planks",
+    "bottom": "calmoverse:block/warped_planks",
+    "top": "calmoverse:block/warped_planks"
+  },
+  "render_type": "solid"
+}

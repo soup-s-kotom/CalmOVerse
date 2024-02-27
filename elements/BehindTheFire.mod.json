@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "behind_the_fire.png",
+    "width": 32,
+    "height": 16,
+    "title": "Behind The Fire",
+    "author": "Kotonator"
+  }
+}

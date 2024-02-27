@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calmoverse:block/flaming_roots",
+    "particle": "calmoverse:block/flaming_roots"
+  }
+}

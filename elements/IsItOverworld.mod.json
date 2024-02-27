@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "leaves.png",
+    "width": 32,
+    "height": 16,
+    "title": "is it overworld?",
+    "author": "Kotonator"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "this_is_the_end2.png",
+    "width": 32,
+    "height": 16,
+    "title": "This is the end",
+    "author": "Kotonator"
+  }
+}

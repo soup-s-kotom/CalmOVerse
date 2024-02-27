@@ -1,0 +1,1059 @@
+{
+  "mod_elements": [
+    {
+      "name": "Soulmapleleave",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulmapleleaf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/client/particle/SoulmapleleaveParticle.java",
+          "src/main/resources/assets/calmoverse/particles/soulmapleleaf.json"
+        ]
+      },
+      "path": "~/Particles/Soul"
+    },
+    {
+      "name": "SoulmappleleavesUpdateTick",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulmappleleaves_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/SoulmappleleavesUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Particles/Soul"
+    },
+    {
+      "name": "CalmOVerse",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calm_o_verse",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SoulMapleLog",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleLogBlock.java",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_log.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_log.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_log.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMapleWood",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_wood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleWoodBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_wood.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_wood.json",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_wood.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMaplePlanks",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/SoulMaplePlanksBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_planks.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_planks.json",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_planks.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMapleSlab",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_slab_top.json",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_slab.json",
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleSlabBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_slab.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_slab_full.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_slab.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMapleStairs",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleStairsBlock.java",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_stairs.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_stairs_outer.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_stairs.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_stairs.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_stairs_inner.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMapleFence",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_fence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleFenceBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_fence_post.json",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_fence.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_fence.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_fence_inventory.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_fence.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMapleFenceGate",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_fence_gate_wall.json",
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleFenceGateBlock.java",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_fence_gate.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_fence_gate.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_fence_gate.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_fence_gate_open.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_fence_gate_wall_open.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMapleButton",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_button_pressed.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_button.json",
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleButtonBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_button.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_button_inventory.json",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_button.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMaplePressurePlate",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_pressure_plate.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_pressure_plate.json",
+          "src/main/java/net/mcreator/calmoverse/block/SoulMaplePressurePlateBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_pressure_plate.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_pressure_plate_down.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMapleDoor",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_door_bottom_right.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_door_top_right_open.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_door_top_right.json",
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleDoorBlock.java",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_door.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_door_bottom_left_open.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_door.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_door_bottom_left.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_door_top_left_open.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_door_top_left.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_door_bottom_right_open.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "SoulMapleTrapdoor",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleTrapdoorBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_trapdoor.json",
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_trapdoor.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_trapdoor_top.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_trapdoor.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_trapdoor_open.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "BurnedWood",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_wood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/BurnedWoodBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/burned_wood.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_wood.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_wood.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedLog",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/burned_log.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedLogBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/burned_log.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_log.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "StrippedBurnedWood",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_burned_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/stripped_burned_wood.json",
+          "src/main/resources/assets/calmoverse/blockstates/stripped_burned_wood.json",
+          "src/main/resources/assets/calmoverse/models/item/stripped_burned_wood.json",
+          "src/main/java/net/mcreator/calmoverse/block/StrippedBurnedWoodBlock.java"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "StrippedBurnedLog",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_burned_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/stripped_burned_log.json",
+          "src/main/resources/assets/calmoverse/models/item/stripped_burned_log.json",
+          "src/main/java/net/mcreator/calmoverse/block/StrippedBurnedLogBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/stripped_burned_log.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedPlanks",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/burned_planks.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedPlanksBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/burned_planks.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_planks.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedFence",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/burned_fence.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_fence.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_fence_post.json",
+          "src/main/resources/assets/calmoverse/models/item/burned_fence.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedFenceBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/burned_fence_inventory.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedSlab",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/burned_slab.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedSlabBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/burned_slab_full.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_slab.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_slab_top.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_slab.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedStairs",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/burned_stairs.json",
+          "src/main/resources/assets/calmoverse/models/item/burned_stairs.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_stairs.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_stairs_inner.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedStairsBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/burned_stairs_outer.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedFenceGate",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/burned_fence_gate_wall_open.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedFenceGateBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/burned_fence_gate_open.json",
+          "src/main/resources/assets/calmoverse/models/item/burned_fence_gate.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_fence_gate_wall.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_fence_gate.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_fence_gate.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedButton",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/burned_button_pressed.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_button_inventory.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_button.json",
+          "src/main/resources/assets/calmoverse/models/item/burned_button.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedButtonBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/burned_button.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedPressurePlate",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/burned_pressure_plate.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedPressurePlateBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/burned_pressure_plate.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_pressure_plate.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_pressure_plate_down.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedDoor",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/BurnedDoorBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/burned_door_bottom_right.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_door_bottom_left.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_door_top_left_open.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_door_top_right_open.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_door_top_left.json",
+          "src/main/resources/assets/calmoverse/models/item/burned_door.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_door_bottom_left_open.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_door.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_door_bottom_right_open.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_door_top_right.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "BurnedTrapDoor",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_trap_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/burned_trap_door_top.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_trap_door_open.json",
+          "src/main/resources/assets/calmoverse/models/block/burned_trap_door.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedTrapDoorBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/burned_trap_door.json",
+          "src/main/resources/assets/calmoverse/blockstates/burned_trap_door.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "FlaimingRoots",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaiming_roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/flaiming_roots.json",
+          "src/main/resources/assets/calmoverse/models/item/flaiming_roots.json",
+          "src/main/java/net/mcreator/calmoverse/block/FlaimingRootsBlock.java",
+          "src/main/resources/assets/calmoverse/blockstates/flaiming_roots.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "FlamesTearStone",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flames_tear_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/FlamesTearStoneBlock.java",
+          "src/main/resources/assets/calmoverse/blockstates/flames_tear_stone.json",
+          "src/main/resources/assets/calmoverse/models/item/flames_tear_stone.json",
+          "src/main/resources/assets/calmoverse/models/block/flames_tear_stone.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/BurnedWood"
+    },
+    {
+      "name": "FlameOrose",
+      "type": "plant",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_orose",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/flame_orose.json",
+          "src/main/resources/assets/calmoverse/models/block/flame_orose_bottom.json",
+          "src/main/resources/assets/calmoverse/models/block/flame_orose.json",
+          "src/main/resources/assets/calmoverse/models/item/flame_orose.json",
+          "src/main/java/net/mcreator/calmoverse/block/FlameOroseBlock.java"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/flowers_grass"
+    },
+    {
+      "name": "GlobeFlower",
+      "type": "plant",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "globe_flower",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/globe_flower.json",
+          "src/main/resources/assets/calmoverse/blockstates/globe_flower.json",
+          "src/main/resources/assets/calmoverse/models/block/globe_flower.json",
+          "src/main/java/net/mcreator/calmoverse/block/GlobeFlowerBlock.java"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/flowers_grass"
+    },
+    {
+      "name": "SoulMapleLeaves",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_maple_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/soul_maple_leaves.json",
+          "src/main/resources/assets/calmoverse/models/block/soul_maple_leaves.json",
+          "src/main/java/net/mcreator/calmoverse/block/SoulMapleLeavesBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/soul_maple_leaves.json"
+        ]
+      },
+      "path": "~/Blocks/SoulBlocks"
+    },
+    {
+      "name": "BurnedWalley",
+      "type": "dimension",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_walley",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calmoverse/dimension/burned_walley.json",
+          "src/main/resources/data/calmoverse/dimension_type/burned_walley.json"
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "Geyser",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geyser",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/geyser.json",
+          "src/main/resources/assets/calmoverse/models/block/geyser.json",
+          "src/main/resources/assets/calmoverse/models/item/geyser.json",
+          "src/main/java/net/mcreator/calmoverse/block/GeyserBlock.java"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley"
+    },
+    {
+      "name": "Igniy",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igniy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/igniy.json",
+          "src/main/java/net/mcreator/calmoverse/block/IgniyBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/igniy.json",
+          "src/main/resources/assets/calmoverse/blockstates/igniy.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley"
+    },
+    {
+      "name": "Ash",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/AshBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/ash.json",
+          "src/main/resources/assets/calmoverse/blockstates/ash.json",
+          "src/main/resources/assets/calmoverse/models/block/ash.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/Ash"
+    },
+    {
+      "name": "OverheatedAsh",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overheated_ash",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/overheated_ash.json",
+          "src/main/resources/assets/calmoverse/models/item/overheated_ash.json",
+          "src/main/resources/assets/calmoverse/models/block/overheated_ash.json",
+          "src/main/java/net/mcreator/calmoverse/block/OverheatedAshBlock.java"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/Ash"
+    },
+    {
+      "name": "HeatedAsh",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heated_ash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/HeatedAshBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/heated_ash.json",
+          "src/main/resources/assets/calmoverse/blockstates/heated_ash.json",
+          "src/main/resources/assets/calmoverse/models/block/heated_ash.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/Ash"
+    },
+    {
+      "name": "Fossils",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossils",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/fossils.json",
+          "src/main/resources/assets/calmoverse/models/block/fossils.json",
+          "src/main/java/net/mcreator/calmoverse/block/FossilsBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/fossils.json"
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley"
+    },
+    {
+      "name": "BurnedValleyPortal",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_valley_portal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/block/burned_valley_portal.json",
+          "src/main/java/net/mcreator/calmoverse/block/BurnedValleyPortalBlock.java",
+          "src/main/resources/assets/calmoverse/blockstates/burned_valley_portal.json",
+          "src/main/resources/assets/calmoverse/models/item/burned_valley_portal.json"
+        ]
+      },
+      "path": "~/Blocks/special/Portal"
+    },
+    {
+      "name": "BehindTheFire",
+      "type": "painting",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "behind_the_fire",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "ThisIsNotHell",
+      "type": "painting",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "this_is_not_hell",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "LeaveYourMind",
+      "type": "painting",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_your_mind",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "IsItOverworld",
+      "type": "painting",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_it_overworld",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "PartyRoom",
+      "type": "painting",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_room",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "ThisIsTheEnd",
+      "type": "painting",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "this_is_the_end",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "SoulArmor",
+      "type": "armor",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/soul_armor_helmet.json",
+          "src/main/java/net/mcreator/calmoverse/item/SoulArmorItem.java",
+          "src/main/resources/assets/calmoverse/models/item/soul_armor_chestplate.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_armor_boots.json",
+          "src/main/resources/assets/calmoverse/models/item/soul_armor_leggings.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "AshValley",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_valley",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calmoverse/worldgen/biome/ash_valley.json",
+          "src/main/resources/data/calmoverse/worldgen/placed_feature/ash_valley_tree.json",
+          "src/main/resources/data/calmoverse/worldgen/configured_feature/ash_valley_tree.json"
+        ]
+      },
+      "path": "~/Biomes/BurnedWalley"
+    },
+    {
+      "name": "Timer",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/TimerProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Elements"
+    },
+    {
+      "name": "SoulArmorBootsTick",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_armor_boots_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/SoulArmorBootsTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armor/Procedures/SoulArmor"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "CVTime",
+      "type": "number",
+      "scope": "global",
+      "value": "20.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.calmoverse.stripped_burned_wood": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_log": "Soul Maple Log",
+      "block.calmoverse.soul_maple_fence": "Soul Maple Planks",
+      "block.calmoverse.ash": "Ash",
+      "block.calmoverse.burned_log": "Burned Log",
+      "block.calmoverse.soul_maple_fence_gate": "Soul Maple Planks",
+      "block.calmoverse.flaiming_roots": "Flaiming Roots",
+      "block.calmoverse.soul_maple_planks": "Soul Maple Planks",
+      "item.calmoverse.soul_armor_chestplate": "Soul Armor Chestplate",
+      "block.calmoverse.soul_maple_slab": "Soul Maple Planks",
+      "block.calmoverse.burned_door": "Stripped Burned Wood",
+      "item.calmoverse.soul_armor_leggings": "Soul Armor Leggings",
+      "block.calmoverse.burned_fence_gate": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_pressure_plate": "Soul Maple Planks",
+      "block.calmoverse.burned_stairs": "Stripped Burned Wood",
+      "item.calmoverse.soul_armor_boots": "Soul Armor Boots",
+      "block.calmoverse.igniy": "Igniy",
+      "block.calmoverse.geyser": "Geyser",
+      "block.calmoverse.burned_planks": "Stripped Burned Wood",
+      "block.calmoverse.burned_pressure_plate": "Stripped Burned Wood",
+      "block.calmoverse.overheated_ash": "Overheated Ash",
+      "block.calmoverse.flame_orose": "Flame Orose",
+      "block.calmoverse.burned_button": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_trapdoor": "Soul Maple Planks",
+      "block.calmoverse.stripped_burned_log": "Stripped Burned Wood",
+      "block.calmoverse.heated_ash": "Overheated Ash",
+      "block.calmoverse.soul_maple_wood": "Soul Maple Log",
+      "block.calmoverse.globe_flower": "Globe Flower",
+      "block.calmoverse.flames_tear_stone": "Flaiming Roots",
+      "block.calmoverse.soul_maple_leaves": "Soul Maple Leaves",
+      "block.calmoverse.burned_valley_portal": "Burned Valley Portal",
+      "item_group.calmoverse.calm_o_verse": "Calm O Verse",
+      "block.calmoverse.burned_fence": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_button": "Soul Maple Planks",
+      "block.calmoverse.burned_wood": "Burned Wood",
+      "block.calmoverse.fossils": "Fossils",
+      "biome.calmoverse.ash_valley": "Ash valley",
+      "block.calmoverse.burned_trap_door": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_stairs": "Soul Maple Planks",
+      "block.calmoverse.soul_maple_door": "Soul Maple Planks",
+      "block.calmoverse.burned_slab": "Stripped Burned Wood",
+      "item.calmoverse.soul_armor_helmet": "Soul Armor Helmet"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Dimensions",
+        "children": []
+      },
+      {
+        "name": "Biomes",
+        "children": [
+          {
+            "name": "BurnedWalley",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "SoulBlocks",
+            "children": []
+          },
+          {
+            "name": "BurnedWalley",
+            "children": [
+              {
+                "name": "BurnedWood",
+                "children": []
+              },
+              {
+                "name": "flowers_grass",
+                "children": []
+              },
+              {
+                "name": "Ash",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "special",
+            "children": [
+              {
+                "name": "Portal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Armor",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": [
+              {
+                "name": "SoulArmor",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Elements",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Tools",
+        "children": []
+      },
+      {
+        "name": "Paintings",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": [
+          {
+            "name": "Soul",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "calmoverse",
+    "modName": "CalmOVerse",
+    "version": "1.0.0",
+    "author": "fokin, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "modElementsPackage": "net.mcreator.calmoverse",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

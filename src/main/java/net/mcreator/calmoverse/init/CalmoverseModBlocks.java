@@ -1,0 +1,165 @@
+
+/*
+ *	MCreator note: This file will be REGENERATED on each build.
+ */
+package net.mcreator.calmoverse.init;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
+
+import net.mcreator.calmoverse.block.StrippedBurnedWoodBlock;
+import net.mcreator.calmoverse.block.StrippedBurnedLogBlock;
+import net.mcreator.calmoverse.block.SoulMapleWoodBlock;
+import net.mcreator.calmoverse.block.SoulMapleTrapdoorBlock;
+import net.mcreator.calmoverse.block.SoulMapleStairsBlock;
+import net.mcreator.calmoverse.block.SoulMapleSlabBlock;
+import net.mcreator.calmoverse.block.SoulMaplePressurePlateBlock;
+import net.mcreator.calmoverse.block.SoulMaplePlanksBlock;
+import net.mcreator.calmoverse.block.SoulMapleLogBlock;
+import net.mcreator.calmoverse.block.SoulMapleLeavesBlock;
+import net.mcreator.calmoverse.block.SoulMapleFenceGateBlock;
+import net.mcreator.calmoverse.block.SoulMapleFenceBlock;
+import net.mcreator.calmoverse.block.SoulMapleDoorBlock;
+import net.mcreator.calmoverse.block.SoulMapleButtonBlock;
+import net.mcreator.calmoverse.block.OverheatedAshBlock;
+import net.mcreator.calmoverse.block.IgniyBlock;
+import net.mcreator.calmoverse.block.HeatedAshBlock;
+import net.mcreator.calmoverse.block.GlobeFlowerBlock;
+import net.mcreator.calmoverse.block.GeyserBlock;
+import net.mcreator.calmoverse.block.FossilsBlock;
+import net.mcreator.calmoverse.block.FlamesTearStoneBlock;
+import net.mcreator.calmoverse.block.FlameOroseBlock;
+import net.mcreator.calmoverse.block.FlaimingRootsBlock;
+import net.mcreator.calmoverse.block.BurnedWoodBlock;
+import net.mcreator.calmoverse.block.BurnedValleyPortalBlock;
+import net.mcreator.calmoverse.block.BurnedTrapDoorBlock;
+import net.mcreator.calmoverse.block.BurnedStairsBlock;
+import net.mcreator.calmoverse.block.BurnedSlabBlock;
+import net.mcreator.calmoverse.block.BurnedPressurePlateBlock;
+import net.mcreator.calmoverse.block.BurnedPlanksBlock;
+import net.mcreator.calmoverse.block.BurnedLogBlock;
+import net.mcreator.calmoverse.block.BurnedFenceGateBlock;
+import net.mcreator.calmoverse.block.BurnedFenceBlock;
+import net.mcreator.calmoverse.block.BurnedDoorBlock;
+import net.mcreator.calmoverse.block.BurnedButtonBlock;
+import net.mcreator.calmoverse.block.AshBlock;
+import net.mcreator.calmoverse.CalmoverseMod;
+
+public class CalmoverseModBlocks {
+	public static Block SOUL_MAPLE_WOOD;
+	public static Block SOUL_MAPLE_LOG;
+	public static Block SOUL_MAPLE_PLANKS;
+	public static Block SOUL_MAPLE_SLAB;
+	public static Block SOUL_MAPLE_STAIRS;
+	public static Block SOUL_MAPLE_FENCE;
+	public static Block SOUL_MAPLE_FENCE_GATE;
+	public static Block SOUL_MAPLE_BUTTON;
+	public static Block SOUL_MAPLE_PRESSURE_PLATE;
+	public static Block SOUL_MAPLE_DOOR;
+	public static Block SOUL_MAPLE_TRAPDOOR;
+	public static Block BURNED_WOOD;
+	public static Block BURNED_LOG;
+	public static Block STRIPPED_BURNED_WOOD;
+	public static Block STRIPPED_BURNED_LOG;
+	public static Block BURNED_PLANKS;
+	public static Block BURNED_FENCE;
+	public static Block BURNED_SLAB;
+	public static Block BURNED_STAIRS;
+	public static Block BURNED_FENCE_GATE;
+	public static Block BURNED_BUTTON;
+	public static Block BURNED_PRESSURE_PLATE;
+	public static Block BURNED_DOOR;
+	public static Block BURNED_TRAP_DOOR;
+	public static Block FLAIMING_ROOTS;
+	public static Block FLAMES_TEAR_STONE;
+	public static Block FLAME_OROSE;
+	public static Block GLOBE_FLOWER;
+	public static Block SOUL_MAPLE_LEAVES;
+	public static Block GEYSER;
+	public static Block IGNIY;
+	public static Block ASH;
+	public static Block OVERHEATED_ASH;
+	public static Block HEATED_ASH;
+	public static Block FOSSILS;
+	public static Block BURNED_VALLEY_PORTAL;
+
+	public static void load() {
+		SOUL_MAPLE_WOOD = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_wood"), new SoulMapleWoodBlock());
+		SOUL_MAPLE_LOG = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_log"), new SoulMapleLogBlock());
+		SOUL_MAPLE_PLANKS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_planks"), new SoulMaplePlanksBlock());
+		SOUL_MAPLE_SLAB = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_slab"), new SoulMapleSlabBlock());
+		SOUL_MAPLE_STAIRS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_stairs"), new SoulMapleStairsBlock());
+		SOUL_MAPLE_FENCE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_fence"), new SoulMapleFenceBlock());
+		SOUL_MAPLE_FENCE_GATE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_fence_gate"), new SoulMapleFenceGateBlock());
+		SOUL_MAPLE_BUTTON = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_button"), new SoulMapleButtonBlock());
+		SOUL_MAPLE_PRESSURE_PLATE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_pressure_plate"), new SoulMaplePressurePlateBlock());
+		SOUL_MAPLE_DOOR = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_door"), new SoulMapleDoorBlock());
+		SOUL_MAPLE_TRAPDOOR = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_trapdoor"), new SoulMapleTrapdoorBlock());
+		BURNED_WOOD = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_wood"), new BurnedWoodBlock());
+		BURNED_LOG = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_log"), new BurnedLogBlock());
+		STRIPPED_BURNED_WOOD = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "stripped_burned_wood"), new StrippedBurnedWoodBlock());
+		STRIPPED_BURNED_LOG = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "stripped_burned_log"), new StrippedBurnedLogBlock());
+		BURNED_PLANKS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_planks"), new BurnedPlanksBlock());
+		BURNED_FENCE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_fence"), new BurnedFenceBlock());
+		BURNED_SLAB = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_slab"), new BurnedSlabBlock());
+		BURNED_STAIRS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_stairs"), new BurnedStairsBlock());
+		BURNED_FENCE_GATE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_fence_gate"), new BurnedFenceGateBlock());
+		BURNED_BUTTON = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_button"), new BurnedButtonBlock());
+		BURNED_PRESSURE_PLATE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_pressure_plate"), new BurnedPressurePlateBlock());
+		BURNED_DOOR = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_door"), new BurnedDoorBlock());
+		BURNED_TRAP_DOOR = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_trap_door"), new BurnedTrapDoorBlock());
+		FLAIMING_ROOTS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "flaiming_roots"), new FlaimingRootsBlock());
+		FLAMES_TEAR_STONE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "flames_tear_stone"), new FlamesTearStoneBlock());
+		FLAME_OROSE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "flame_orose"), new FlameOroseBlock());
+		GLOBE_FLOWER = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "globe_flower"), new GlobeFlowerBlock());
+		SOUL_MAPLE_LEAVES = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_leaves"), new SoulMapleLeavesBlock());
+		GEYSER = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "geyser"), new GeyserBlock());
+		IGNIY = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "igniy"), new IgniyBlock());
+		ASH = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "ash"), new AshBlock());
+		OVERHEATED_ASH = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "overheated_ash"), new OverheatedAshBlock());
+		HEATED_ASH = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "heated_ash"), new HeatedAshBlock());
+		FOSSILS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "fossils"), new FossilsBlock());
+		BURNED_VALLEY_PORTAL = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_valley_portal"), new BurnedValleyPortalBlock());
+	}
+
+	public static void clientLoad() {
+		SoulMapleWoodBlock.clientInit();
+		SoulMapleLogBlock.clientInit();
+		SoulMaplePlanksBlock.clientInit();
+		SoulMapleSlabBlock.clientInit();
+		SoulMapleStairsBlock.clientInit();
+		SoulMapleFenceBlock.clientInit();
+		SoulMapleFenceGateBlock.clientInit();
+		SoulMapleButtonBlock.clientInit();
+		SoulMaplePressurePlateBlock.clientInit();
+		SoulMapleDoorBlock.clientInit();
+		SoulMapleTrapdoorBlock.clientInit();
+		BurnedWoodBlock.clientInit();
+		BurnedLogBlock.clientInit();
+		StrippedBurnedWoodBlock.clientInit();
+		StrippedBurnedLogBlock.clientInit();
+		BurnedPlanksBlock.clientInit();
+		BurnedFenceBlock.clientInit();
+		BurnedSlabBlock.clientInit();
+		BurnedStairsBlock.clientInit();
+		BurnedFenceGateBlock.clientInit();
+		BurnedButtonBlock.clientInit();
+		BurnedPressurePlateBlock.clientInit();
+		BurnedDoorBlock.clientInit();
+		BurnedTrapDoorBlock.clientInit();
+		FlaimingRootsBlock.clientInit();
+		FlamesTearStoneBlock.clientInit();
+		FlameOroseBlock.clientInit();
+		GlobeFlowerBlock.clientInit();
+		SoulMapleLeavesBlock.clientInit();
+		GeyserBlock.clientInit();
+		IgniyBlock.clientInit();
+		AshBlock.clientInit();
+		OverheatedAshBlock.clientInit();
+		HeatedAshBlock.clientInit();
+		FossilsBlock.clientInit();
+		BurnedValleyPortalBlock.clientInit();
+	}
+}

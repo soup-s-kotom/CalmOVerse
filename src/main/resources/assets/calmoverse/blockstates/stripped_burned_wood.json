@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "calmoverse:block/stripped_burned_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "calmoverse:block/stripped_burned_wood"
+    },
+    "axis=z": {
+      "model": "calmoverse:block/stripped_burned_wood",
+      "x": 90
+    }
+  }
+}

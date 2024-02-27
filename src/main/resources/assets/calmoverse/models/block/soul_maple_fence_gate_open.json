@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "particle": "calmoverse:block/warped_planks",
+    "texture": "calmoverse:block/warped_planks"
+  },
+  "render_type": "solid"
+}

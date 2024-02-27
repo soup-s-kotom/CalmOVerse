@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "leave_your_mind.png",
+    "width": 32,
+    "height": 16,
+    "title": "LeaveYourMind",
+    "author": "Kotonator"
+  }
+}

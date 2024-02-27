@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "calmoverse:block/flame_orose"
+    },
+    "half=lower": {
+      "model": "calmoverse:block/flame_orose_bottom"
+    }
+  }
+}

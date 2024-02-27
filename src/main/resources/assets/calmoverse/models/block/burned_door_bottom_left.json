@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left",
+  "textures": {
+    "particle": "calmoverse:block/burnedwood_planks",
+    "bottom": "calmoverse:block/burnedwood_planks",
+    "top": "calmoverse:block/burnedwood_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "calmoverse:block/soul_maple_slab"
+    },
+    "type=top": {
+      "model": "calmoverse:block/soul_maple_slab_top"
+    },
+    "type=double": {
+      "model": "calmoverse:block/soul_maple_slab_full"
+    }
+  }
+}

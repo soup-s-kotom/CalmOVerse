@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calmoverse:block/flames_tears_stone",
+    "particle": "calmoverse:block/flames_tears_stone"
+  }
+}
