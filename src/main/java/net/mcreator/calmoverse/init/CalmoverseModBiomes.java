@@ -12,6 +12,7 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.calmoverse.CalmoverseMod;
 
 public class CalmoverseModBiomes {
+	public static ResourceKey<Biome> ASTAL_PLAINS = ResourceKey.create(Registries.BIOME, new ResourceLocation(CalmoverseMod.MODID, "astal_plains"));
 	public static ResourceKey<Biome> ASH_VALLEY = ResourceKey.create(Registries.BIOME, new ResourceLocation(CalmoverseMod.MODID, "ash_valley"));
 
 	public static void load() {

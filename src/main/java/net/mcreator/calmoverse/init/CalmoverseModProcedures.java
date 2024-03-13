@@ -7,6 +7,7 @@ package net.mcreator.calmoverse.init;
 import net.mcreator.calmoverse.procedures.TimerProcedure;
 import net.mcreator.calmoverse.procedures.SoulmappleleavesUpdateTickProcedure;
 import net.mcreator.calmoverse.procedures.SoulArmorBootsTickProcedure;
+import net.mcreator.calmoverse.procedures.ReactiveGloveRightClickProcedure;
 
 @SuppressWarnings("InstantiationOfUtilityClass")
 public class CalmoverseModProcedures {
@@ -14,5 +15,6 @@ public class CalmoverseModProcedures {
 		new TimerProcedure();
 		new SoulmappleleavesUpdateTickProcedure();
 		new SoulArmorBootsTickProcedure();
+		new ReactiveGloveRightClickProcedure();
 	}
 }

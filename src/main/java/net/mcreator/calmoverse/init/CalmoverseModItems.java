@@ -10,6 +10,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
 
 import net.mcreator.calmoverse.item.SoulArmorItem;
+import net.mcreator.calmoverse.item.ReactiveglovesItem;
+import net.mcreator.calmoverse.item.CalmiumCrystalItem;
 import net.mcreator.calmoverse.CalmoverseMod;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -55,6 +57,11 @@ public class CalmoverseModItems {
 	public static Item SOUL_ARMOR_CHESTPLATE;
 	public static Item SOUL_ARMOR_LEGGINGS;
 	public static Item SOUL_ARMOR_BOOTS;
+	public static Item REACTIVEGLOVES;
+	public static Item CHAOS_FRAGMENT;
+	public static Item CALMIUM_CRYSTALS;
+	public static Item ASTRAL_BASALT;
+	public static Item CALMIUM_CRYSTAL;
 
 	public static void load() {
 		SOUL_MAPLE_WOOD = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_wood"), new BlockItem(CalmoverseModBlocks.SOUL_MAPLE_WOOD, new Item.Properties()));
@@ -133,6 +140,14 @@ public class CalmoverseModItems {
 		SOUL_ARMOR_CHESTPLATE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "soul_armor_chestplate"), new SoulArmorItem.Chestplate());
 		SOUL_ARMOR_LEGGINGS = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "soul_armor_leggings"), new SoulArmorItem.Leggings());
 		SOUL_ARMOR_BOOTS = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "soul_armor_boots"), new SoulArmorItem.Boots());
+		REACTIVEGLOVES = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "reactivegloves"), new ReactiveglovesItem());
+		CHAOS_FRAGMENT = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "chaos_fragment"), new BlockItem(CalmoverseModBlocks.CHAOS_FRAGMENT, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CalmoverseModTabs.TAB_CALM_O_VERSE).register(content -> content.accept(CHAOS_FRAGMENT));
+		CALMIUM_CRYSTALS = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "calmium_crystals"), new BlockItem(CalmoverseModBlocks.CALMIUM_CRYSTALS, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CalmoverseModTabs.TAB_CALM_O_VERSE).register(content -> content.accept(CALMIUM_CRYSTALS));
+		ASTRAL_BASALT = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "astral_basalt"), new BlockItem(CalmoverseModBlocks.ASTRAL_BASALT, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CalmoverseModTabs.TAB_CALM_O_VERSE).register(content -> content.accept(ASTRAL_BASALT));
+		CALMIUM_CRYSTAL = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "calmium_crystal"), new CalmiumCrystalItem());
 	}
 
 	public static void clientLoad() {

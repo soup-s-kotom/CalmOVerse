@@ -819,6 +819,7 @@
     {
       "name": "AshValley",
       "type": "biome",
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ash_valley",
@@ -881,6 +882,158 @@
         ]
       },
       "path": "~/Armor/Procedures/SoulArmor"
+    },
+    {
+      "name": "Reactivegloves",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactivegloves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/item/ReactiveglovesItem.java",
+          "src/main/resources/assets/calmoverse/models/item/reactivegloves.json"
+        ]
+      },
+      "path": "~/Tools/Engeneer/ReactiveGlove"
+    },
+    {
+      "name": "ReactiveGloveRightClick",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactive_glove_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/ReactiveGloveRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Engeneer/ReactiveGlove"
+    },
+    {
+      "name": "ChaosFragment",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_fragment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/block/ChaosFragmentBlock.java",
+          "src/main/resources/assets/calmoverse/blockstates/chaos_fragment.json",
+          "src/main/resources/assets/calmoverse/models/item/chaos_fragment.json",
+          "src/main/resources/assets/calmoverse/models/block/chaos_fragment.json"
+        ]
+      },
+      "path": "~/Blocks/Astral/Ores"
+    },
+    {
+      "name": "CalmiumCrystals",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calmium_crystals",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/calmium_crystals.json",
+          "src/main/resources/assets/calmoverse/blockstates/calmium_crystals.json",
+          "src/main/java/net/mcreator/calmoverse/block/CalmiumCrystalsBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/calmium_crystals.json"
+        ]
+      },
+      "path": "~/Blocks/Astral/Ores"
+    },
+    {
+      "name": "AstralBasalt",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_basalt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/blockstates/astral_basalt.json",
+          "src/main/java/net/mcreator/calmoverse/block/AstralBasaltBlock.java",
+          "src/main/resources/assets/calmoverse/models/item/astral_basalt.json",
+          "src/main/resources/assets/calmoverse/models/block/astral_basalt.json"
+        ]
+      },
+      "path": "~/Blocks/Astral/Ores"
+    },
+    {
+      "name": "AstalPlains",
+      "type": "biome",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astal_plains",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calmoverse/worldgen/biome/astal_plains.json",
+          "src/main/resources/data/calmoverse/worldgen/placed_feature/astal_plains_tree.json",
+          "src/main/resources/data/calmoverse/worldgen/configured_feature/astal_plains_tree.json"
+        ]
+      },
+      "path": "~/Biomes/astral"
+    },
+    {
+      "name": "Astral",
+      "type": "dimension",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calmoverse/dimension/astral.json",
+          "src/main/resources/data/calmoverse/dimension_type/astral.json"
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "CalmiumCrystal",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calmium_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/item/CalmiumCrystalItem.java",
+          "src/main/resources/assets/calmoverse/models/item/calmium_crystal.json"
+        ]
+      },
+      "path": "~/Items/Ore"
     }
   ],
   "variable_elements": [
@@ -895,47 +1048,53 @@
   "language_map": {
     "en_us": {
       "block.calmoverse.stripped_burned_wood": "Stripped Burned Wood",
-      "block.calmoverse.soul_maple_log": "Soul Maple Log",
       "block.calmoverse.soul_maple_fence": "Soul Maple Planks",
-      "block.calmoverse.ash": "Ash",
       "block.calmoverse.burned_log": "Burned Log",
-      "block.calmoverse.soul_maple_fence_gate": "Soul Maple Planks",
       "block.calmoverse.flaiming_roots": "Flaiming Roots",
-      "block.calmoverse.soul_maple_planks": "Soul Maple Planks",
-      "item.calmoverse.soul_armor_chestplate": "Soul Armor Chestplate",
+      "item.calmoverse.reactivegloves": "Reactive gloves",
       "block.calmoverse.soul_maple_slab": "Soul Maple Planks",
       "block.calmoverse.burned_door": "Stripped Burned Wood",
       "item.calmoverse.soul_armor_leggings": "Soul Armor Leggings",
-      "block.calmoverse.burned_fence_gate": "Stripped Burned Wood",
-      "block.calmoverse.soul_maple_pressure_plate": "Soul Maple Planks",
-      "block.calmoverse.burned_stairs": "Stripped Burned Wood",
-      "item.calmoverse.soul_armor_boots": "Soul Armor Boots",
       "block.calmoverse.igniy": "Igniy",
       "block.calmoverse.geyser": "Geyser",
       "block.calmoverse.burned_planks": "Stripped Burned Wood",
       "block.calmoverse.burned_pressure_plate": "Stripped Burned Wood",
       "block.calmoverse.overheated_ash": "Overheated Ash",
-      "block.calmoverse.flame_orose": "Flame Orose",
       "block.calmoverse.burned_button": "Stripped Burned Wood",
-      "block.calmoverse.soul_maple_trapdoor": "Soul Maple Planks",
       "block.calmoverse.stripped_burned_log": "Stripped Burned Wood",
       "block.calmoverse.heated_ash": "Overheated Ash",
+      "block.calmoverse.burned_valley_portal": "Burned Valley Portal",
+      "biome.calmoverse.astal_plains": "Astal Plains",
+      "item_group.calmoverse.calm_o_verse": "Calm O Verse",
+      "block.calmoverse.burned_fence": "Stripped Burned Wood",
+      "block.calmoverse.chaos_fragment": "Chaos Fragment",
+      "block.calmoverse.fossils": "Fossils",
+      "biome.calmoverse.ash_valley": "Ash valley",
+      "block.calmoverse.burned_trap_door": "Stripped Burned Wood",
+      "item.calmoverse.soul_armor_helmet": "Soul Armor Helmet",
+      "item.calmoverse.calmium_crystal": "Calmium Crystal",
+      "block.calmoverse.soul_maple_log": "Soul Maple Log",
+      "block.calmoverse.soul_maple_fence_gate": "Soul Maple Planks",
+      "block.calmoverse.ash": "Ash",
+      "block.calmoverse.soul_maple_planks": "Soul Maple Planks",
+      "item.calmoverse.soul_armor_chestplate": "Soul Armor Chestplate",
+      "block.calmoverse.burned_fence_gate": "Stripped Burned Wood",
+      "block.calmoverse.calmium_crystals": "Chaos Fragment",
+      "block.calmoverse.astral_basalt": "Chaos Fragment",
+      "block.calmoverse.soul_maple_pressure_plate": "Soul Maple Planks",
+      "block.calmoverse.burned_stairs": "Stripped Burned Wood",
+      "item.calmoverse.soul_armor_boots": "Soul Armor Boots",
+      "block.calmoverse.flame_orose": "Flame Orose",
+      "block.calmoverse.soul_maple_trapdoor": "Soul Maple Planks",
       "block.calmoverse.soul_maple_wood": "Soul Maple Log",
       "block.calmoverse.globe_flower": "Globe Flower",
       "block.calmoverse.flames_tear_stone": "Flaiming Roots",
       "block.calmoverse.soul_maple_leaves": "Soul Maple Leaves",
-      "block.calmoverse.burned_valley_portal": "Burned Valley Portal",
-      "item_group.calmoverse.calm_o_verse": "Calm O Verse",
-      "block.calmoverse.burned_fence": "Stripped Burned Wood",
-      "block.calmoverse.soul_maple_button": "Soul Maple Planks",
       "block.calmoverse.burned_wood": "Burned Wood",
-      "block.calmoverse.fossils": "Fossils",
-      "biome.calmoverse.ash_valley": "Ash valley",
-      "block.calmoverse.burned_trap_door": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_button": "Soul Maple Planks",
       "block.calmoverse.soul_maple_stairs": "Soul Maple Planks",
-      "block.calmoverse.soul_maple_door": "Soul Maple Planks",
       "block.calmoverse.burned_slab": "Stripped Burned Wood",
-      "item.calmoverse.soul_armor_helmet": "Soul Armor Helmet"
+      "block.calmoverse.soul_maple_door": "Soul Maple Planks"
     }
   },
   "foldersRoot": {
@@ -950,6 +1109,10 @@
         "children": [
           {
             "name": "BurnedWalley",
+            "children": []
+          },
+          {
+            "name": "astral",
             "children": []
           }
         ]
@@ -986,12 +1149,26 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Astral",
+            "children": [
+              {
+                "name": "Ores",
+                "children": []
+              }
+            ]
           }
         ]
       },
       {
         "name": "Items",
-        "children": []
+        "children": [
+          {
+            "name": "Ore",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Armor",
@@ -1017,7 +1194,17 @@
       },
       {
         "name": "Tools",
-        "children": []
+        "children": [
+          {
+            "name": "Engeneer",
+            "children": [
+              {
+                "name": "ReactiveGlove",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Paintings",

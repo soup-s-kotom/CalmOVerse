@@ -32,6 +32,8 @@ import net.mcreator.calmoverse.block.FossilsBlock;
 import net.mcreator.calmoverse.block.FlamesTearStoneBlock;
 import net.mcreator.calmoverse.block.FlameOroseBlock;
 import net.mcreator.calmoverse.block.FlaimingRootsBlock;
+import net.mcreator.calmoverse.block.ChaosFragmentBlock;
+import net.mcreator.calmoverse.block.CalmiumCrystalsBlock;
 import net.mcreator.calmoverse.block.BurnedWoodBlock;
 import net.mcreator.calmoverse.block.BurnedValleyPortalBlock;
 import net.mcreator.calmoverse.block.BurnedTrapDoorBlock;
@@ -44,6 +46,7 @@ import net.mcreator.calmoverse.block.BurnedFenceGateBlock;
 import net.mcreator.calmoverse.block.BurnedFenceBlock;
 import net.mcreator.calmoverse.block.BurnedDoorBlock;
 import net.mcreator.calmoverse.block.BurnedButtonBlock;
+import net.mcreator.calmoverse.block.AstralBasaltBlock;
 import net.mcreator.calmoverse.block.AshBlock;
 import net.mcreator.calmoverse.CalmoverseMod;
 
@@ -84,6 +87,9 @@ public class CalmoverseModBlocks {
 	public static Block HEATED_ASH;
 	public static Block FOSSILS;
 	public static Block BURNED_VALLEY_PORTAL;
+	public static Block CHAOS_FRAGMENT;
+	public static Block CALMIUM_CRYSTALS;
+	public static Block ASTRAL_BASALT;
 
 	public static void load() {
 		SOUL_MAPLE_WOOD = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_wood"), new SoulMapleWoodBlock());
@@ -122,6 +128,9 @@ public class CalmoverseModBlocks {
 		HEATED_ASH = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "heated_ash"), new HeatedAshBlock());
 		FOSSILS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "fossils"), new FossilsBlock());
 		BURNED_VALLEY_PORTAL = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "burned_valley_portal"), new BurnedValleyPortalBlock());
+		CHAOS_FRAGMENT = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "chaos_fragment"), new ChaosFragmentBlock());
+		CALMIUM_CRYSTALS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "calmium_crystals"), new CalmiumCrystalsBlock());
+		ASTRAL_BASALT = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "astral_basalt"), new AstralBasaltBlock());
 	}
 
 	public static void clientLoad() {
@@ -161,5 +170,8 @@ public class CalmoverseModBlocks {
 		HeatedAshBlock.clientInit();
 		FossilsBlock.clientInit();
 		BurnedValleyPortalBlock.clientInit();
+		ChaosFragmentBlock.clientInit();
+		CalmiumCrystalsBlock.clientInit();
+		AstralBasaltBlock.clientInit();
 	}
 }
