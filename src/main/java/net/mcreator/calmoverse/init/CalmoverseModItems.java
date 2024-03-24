@@ -3,15 +3,20 @@
  */
 package net.mcreator.calmoverse.init;
 
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
 
+import net.mcreator.calmoverse.item.SoulStaffItem;
 import net.mcreator.calmoverse.item.SoulArmorItem;
 import net.mcreator.calmoverse.item.ReactiveglovesItem;
+import net.mcreator.calmoverse.item.KeyOfGenerationItem;
+import net.mcreator.calmoverse.item.EngeneerArmorItem;
 import net.mcreator.calmoverse.item.CalmiumCrystalItem;
+import net.mcreator.calmoverse.item.AstralConcentrateItem;
 import net.mcreator.calmoverse.CalmoverseMod;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -62,6 +67,17 @@ public class CalmoverseModItems {
 	public static Item CALMIUM_CRYSTALS;
 	public static Item ASTRAL_BASALT;
 	public static Item CALMIUM_CRYSTAL;
+	public static Item HIDDEN_CHAOS_FRAGMENT;
+	public static Item SOUL_STAFF;
+	public static Item ENGENEER_ARMOR_HELMET;
+	public static Item ENGENEER_ARMOR_CHESTPLATE;
+	public static Item ENGENEER_ARMOR_LEGGINGS;
+	public static Item ENGENEER_ARMOR_BOOTS;
+	public static Item ALEXANDRIUM;
+	public static Item ASTRAL_CONCENTRATE;
+	public static Item KEY_OF_GENERATION;
+	public static Item SOUL_SPAWN_EGG;
+	public static Item ASTRAL_SLIME_SPAWN_EGG;
 
 	public static void load() {
 		SOUL_MAPLE_WOOD = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_wood"), new BlockItem(CalmoverseModBlocks.SOUL_MAPLE_WOOD, new Item.Properties()));
@@ -148,6 +164,21 @@ public class CalmoverseModItems {
 		ASTRAL_BASALT = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "astral_basalt"), new BlockItem(CalmoverseModBlocks.ASTRAL_BASALT, new Item.Properties()));
 		ItemGroupEvents.modifyEntriesEvent(CalmoverseModTabs.TAB_CALM_O_VERSE).register(content -> content.accept(ASTRAL_BASALT));
 		CALMIUM_CRYSTAL = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "calmium_crystal"), new CalmiumCrystalItem());
+		HIDDEN_CHAOS_FRAGMENT = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "hidden_chaos_fragment"), new BlockItem(CalmoverseModBlocks.HIDDEN_CHAOS_FRAGMENT, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CalmoverseModTabs.TAB_CALM_O_VERSE).register(content -> content.accept(HIDDEN_CHAOS_FRAGMENT));
+		SOUL_STAFF = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "soul_staff"), new SoulStaffItem());
+		ENGENEER_ARMOR_HELMET = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "engeneer_armor_helmet"), new EngeneerArmorItem.Helmet());
+		ENGENEER_ARMOR_CHESTPLATE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "engeneer_armor_chestplate"), new EngeneerArmorItem.Chestplate());
+		ENGENEER_ARMOR_LEGGINGS = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "engeneer_armor_leggings"), new EngeneerArmorItem.Leggings());
+		ENGENEER_ARMOR_BOOTS = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "engeneer_armor_boots"), new EngeneerArmorItem.Boots());
+		ALEXANDRIUM = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "alexandrium"), new BlockItem(CalmoverseModBlocks.ALEXANDRIUM, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CalmoverseModTabs.TAB_CALM_O_VERSE).register(content -> content.accept(ALEXANDRIUM));
+		ASTRAL_CONCENTRATE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "astral_concentrate"), new AstralConcentrateItem());
+		KEY_OF_GENERATION = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "key_of_generation"), new KeyOfGenerationItem());
+		SOUL_SPAWN_EGG = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "soul_spawn_egg"), new SpawnEggItem(CalmoverseModEntities.SOUL, -6710785, -39169, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CalmoverseModTabs.TAB_CALM_O_VERSE).register(content -> content.accept(SOUL_SPAWN_EGG));
+		ASTRAL_SLIME_SPAWN_EGG = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(CalmoverseMod.MODID, "astral_slime_spawn_egg"), new SpawnEggItem(CalmoverseModEntities.ASTRAL_SLIME, -13369396, -16737895, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CalmoverseModTabs.TAB_CALM_O_VERSE).register(content -> content.accept(ASTRAL_SLIME_SPAWN_EGG));
 	}
 
 	public static void clientLoad() {

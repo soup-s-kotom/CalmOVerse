@@ -1,0 +1,65 @@
+repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven { url 'https://jitpack.io' }
+   maven {
+        url "https://maven.terraformersmc.com/"
+    }
+    maven {
+        url "https://maven.shedaniel.me/"
+    }
+    maven {
+        url "https://maven.isxander.dev/releases"
+    }
+
+   maven {
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
+dependencies {
+
+    modLocalRuntime "maven.modrinth:sodium:mc1.20-0.4.10"
+
+   modImplementation "maven.modrinth:uXXizFIs:unerR5MN"
+
+    modImplementation "curse.maven:lithium-360438:4765724"
+
+    modLocalRuntime "curse.maven:lazydfu-433518:3821870"
+
+   // modApi "com.github.tr7zw:EntityCulling:1.6.2-1.20.2"
+
+    modImplementation "curse.maven:starlight-521783:4572096"
+}
+
+
+repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+
+dependencies {
+   modImplementation "curse.maven:entity-texture-features-fabric-568563:5079848"
+   modImplementation "curse.maven:entity-model-features-844662:5039264"
+}
+
+
+repositories {
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
+dependencies {
+ modImplementation "maven.modrinth:mOgUt4GM:RTFDnTKf"
+}
+
+

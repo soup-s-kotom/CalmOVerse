@@ -3,6 +3,7 @@
     {
       "name": "Soulmapleleave",
       "type": "particle",
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulmapleleaf",
@@ -49,6 +50,7 @@
     {
       "name": "CalmOVerse",
       "type": "tab",
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calm_o_verse",
@@ -1034,6 +1036,295 @@
         ]
       },
       "path": "~/Items/Ore"
+    },
+    {
+      "name": "HiddenChaosFragment",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hidden_chaos_fragment",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/hidden_chaos_fragment.json",
+          "src/main/java/net/mcreator/calmoverse/block/HiddenChaosFragmentBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/hidden_chaos_fragment.json",
+          "src/main/resources/assets/calmoverse/blockstates/hidden_chaos_fragment.json"
+        ]
+      },
+      "path": "~/Blocks/Astral/Ores"
+    },
+    {
+      "name": "SoulStaffItemInHandTick",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_staff_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/SoulStaffItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/soul/procedure"
+    },
+    {
+      "name": "SoulStaff",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_staff",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/soul_staff.json",
+          "src/main/java/net/mcreator/calmoverse/item/SoulStaffItem.java"
+        ]
+      },
+      "path": "~/Weapons/soul"
+    },
+    {
+      "name": "BurnedValleyPortalTpToBurnedWalley",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_valley_portal_tp_to_burned_walley",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/BurnedValleyPortalTpToBurnedWalleyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocks/special/Portal/procedure"
+    },
+    {
+      "name": "EntityWalksOnGeyser",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_walks_on_geyser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/EntityWalksOnGeyserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/BurnedWalley/procedure/geyser"
+    },
+    {
+      "name": "EngeneerArmor",
+      "type": "armor",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engeneer_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/engeneer_armor_leggings.json",
+          "src/main/resources/assets/calmoverse/models/item/engeneer_armor_helmet.json",
+          "src/main/resources/assets/calmoverse/models/item/engeneer_armor_chestplate.json",
+          "src/main/java/net/mcreator/calmoverse/item/EngeneerArmorItem.java",
+          "src/main/resources/assets/calmoverse/models/item/engeneer_armor_boots.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "Alexandrium",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alexandrium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calmoverse/models/item/alexandrium.json",
+          "src/main/java/net/mcreator/calmoverse/block/AlexandriumBlock.java",
+          "src/main/resources/assets/calmoverse/models/block/alexandrium.json",
+          "src/main/resources/assets/calmoverse/blockstates/alexandrium.json"
+        ]
+      },
+      "path": "~/Blocks/Astral"
+    },
+    {
+      "name": "AstralConcentrate",
+      "type": "item",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_concentrate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/item/AstralConcentrateItem.java",
+          "src/main/resources/assets/calmoverse/models/item/astral_concentrate.json"
+        ]
+      },
+      "path": "~/Items/Astral"
+    },
+    {
+      "name": "KeyOfGeneration",
+      "type": "item",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_of_generation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/item/KeyOfGenerationItem.java",
+          "src/main/resources/assets/calmoverse/models/item/key_of_generation.json"
+        ]
+      },
+      "path": "~/Items/artifact"
+    },
+    {
+      "name": "Soul",
+      "type": "livingentity",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/entity/SoulEntity.java",
+          "src/main/resources/assets/calmoverse/models/item/soul_spawn_egg.json",
+          "src/main/java/net/mcreator/calmoverse/client/renderer/SoulRenderer.java"
+        ]
+      },
+      "path": "~/Entity"
+    },
+    {
+      "name": "SoulStaffRightclicked",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_staff_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/SoulStaffRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/soul/procedure"
+    },
+    {
+      "name": "AstralSlime",
+      "type": "livingentity",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_slime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/entity/AstralSlimeEntity.java",
+          "src/main/java/net/mcreator/calmoverse/client/renderer/AstralSlimeRenderer.java",
+          "src/main/resources/assets/calmoverse/models/item/astral_slime_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entity"
+    },
+    {
+      "name": "AstralSlimeJumpConstantly",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_slime_jump_constantly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calmoverse/procedures/AstralSlimeJumpConstantlyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entity"
     }
   ],
   "variable_elements": [
@@ -1042,24 +1333,102 @@
       "type": "number",
       "scope": "global",
       "value": "20.0"
+    },
+    {
+      "name": "CVisSummonedBySoulStuff",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
     }
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
+    "ru_ru": {
+      "entity.calmoverse.astral_slime": "Soul",
       "block.calmoverse.stripped_burned_wood": "Stripped Burned Wood",
       "block.calmoverse.soul_maple_fence": "Soul Maple Planks",
       "block.calmoverse.burned_log": "Burned Log",
+      "item.calmoverse.engeneer_armor_boots": "Сапоги инженера",
+      "block.calmoverse.flaiming_roots": "Пламенные корни",
+      "item.calmoverse.reactivegloves": "Реактивные перчатки",
+      "block.calmoverse.burned_door": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_slab": "Soul Maple Planks",
+      "item.calmoverse.soul_armor_leggings": "Поножи душ",
+      "item.calmoverse.astral_concentrate": "Astral Concentrate",
+      "item.calmoverse.key_of_generation": "Ключ генерации",
+      "item.calmoverse.soul_spawn_egg": "Soul Spawn Egg",
+      "entity.calmoverse.soul": "Soul",
+      "block.calmoverse.hidden_chaos_fragment": "Замаскированный фрагмент хаоса",
+      "item.calmoverse.soul_staff": "Посох душ",
+      "block.calmoverse.igniy": "Игний",
+      "block.calmoverse.geyser": "Гейзер",
+      "block.calmoverse.burned_planks": "Stripped Burned Wood",
+      "block.calmoverse.burned_pressure_plate": "Stripped Burned Wood",
+      "block.calmoverse.overheated_ash": "Раскалённый пепел",
+      "item.calmoverse.engeneer_armor_leggings": "Поножи инженера",
+      "block.calmoverse.burned_button": "Кнопка из выжженого дерева",
+      "block.calmoverse.stripped_burned_log": "Stripped Burned Wood",
+      "block.calmoverse.heated_ash": "Остывающий пепел",
+      "block.calmoverse.burned_valley_portal": "Burned Valley Portal",
+      "biome.calmoverse.astal_plains": "Астральные равнины",
+      "item_group.calmoverse.calm_o_verse": "Calm O Verse",
+      "block.calmoverse.burned_fence": "Stripped Burned Wood",
+      "block.calmoverse.chaos_fragment": "Фрагмент хаоса",
+      "block.calmoverse.fossils": "Окаменелость",
+      "biome.calmoverse.ash_valley": "Пепелище",
+      "block.calmoverse.burned_trap_door": "Stripped Burned Wood",
+      "item.calmoverse.soul_armor_helmet": "Шлем душ",
+      "item.calmoverse.calmium_crystal": "Кристалл калмиума",
+      "item.calmoverse.engeneer_armor_helmet": "Каска инженера",
+      "block.calmoverse.soul_maple_log": "Soul Maple Log",
+      "block.calmoverse.soul_maple_fence_gate": "Soul Maple Planks",
+      "block.calmoverse.ash": "Пепел",
+      "item.calmoverse.engeneer_armor_chestplate": "Нагрудник инженера",
+      "block.calmoverse.soul_maple_planks": "Soul Maple Planks",
+      "item.calmoverse.soul_armor_chestplate": "Нагрудник душ",
+      "block.calmoverse.burned_fence_gate": "Stripped Burned Wood",
+      "block.calmoverse.calmium_crystals": "Блок кристаллов калмиума",
+      "block.calmoverse.astral_basalt": "Астральный камень",
+      "block.calmoverse.soul_maple_pressure_plate": "Soul Maple Planks",
+      "block.calmoverse.burned_stairs": "Stripped Burned Wood",
+      "item.calmoverse.soul_armor_boots": "Ботинки душ",
+      "block.calmoverse.flame_orose": "Огнероза",
+      "item.calmoverse.astral_slime_spawn_egg": "Soul Spawn Egg",
+      "block.calmoverse.soul_maple_trapdoor": "Soul Maple Planks",
+      "block.calmoverse.soul_maple_wood": "Soul Maple Log",
+      "block.calmoverse.globe_flower": "Жарок",
+      "block.calmoverse.flames_tear_stone": "Слёзы пламени",
+      "block.calmoverse.soul_maple_leaves": "Soul Maple Leaves",
+      "block.calmoverse.alexandrium": "Александрит",
+      "block.calmoverse.burned_wood": "Burned Wood",
+      "block.calmoverse.soul_maple_button": "Soul Maple Planks",
+      "block.calmoverse.soul_maple_stairs": "Soul Maple Planks",
+      "block.calmoverse.burned_slab": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_door": "Soul Maple Planks"
+    },
+    "en_us": {
+      "entity.calmoverse.astral_slime": "Soul",
+      "block.calmoverse.stripped_burned_wood": "Stripped Burned Wood",
+      "block.calmoverse.soul_maple_fence": "Soul Maple Planks",
+      "block.calmoverse.burned_log": "Burned Log",
+      "item.calmoverse.engeneer_armor_boots": "Engeneer Armor Boots",
       "block.calmoverse.flaiming_roots": "Flaiming Roots",
       "item.calmoverse.reactivegloves": "Reactive gloves",
       "block.calmoverse.soul_maple_slab": "Soul Maple Planks",
       "block.calmoverse.burned_door": "Stripped Burned Wood",
       "item.calmoverse.soul_armor_leggings": "Soul Armor Leggings",
+      "item.calmoverse.astral_concentrate": "Astral Concentrate",
+      "item.calmoverse.key_of_generation": "Key Of Generation",
+      "item.calmoverse.soul_spawn_egg": "Soul Spawn Egg",
+      "entity.calmoverse.soul": "Soul",
+      "block.calmoverse.hidden_chaos_fragment": "Chaos Fragment",
+      "item.calmoverse.soul_staff": "Soul Staff",
       "block.calmoverse.igniy": "Igniy",
       "block.calmoverse.geyser": "Geyser",
       "block.calmoverse.burned_planks": "Stripped Burned Wood",
       "block.calmoverse.burned_pressure_plate": "Stripped Burned Wood",
       "block.calmoverse.overheated_ash": "Overheated Ash",
+      "item.calmoverse.engeneer_armor_leggings": "Engeneer Armor Leggings",
       "block.calmoverse.burned_button": "Stripped Burned Wood",
       "block.calmoverse.stripped_burned_log": "Stripped Burned Wood",
       "block.calmoverse.heated_ash": "Overheated Ash",
@@ -1073,9 +1442,11 @@
       "block.calmoverse.burned_trap_door": "Stripped Burned Wood",
       "item.calmoverse.soul_armor_helmet": "Soul Armor Helmet",
       "item.calmoverse.calmium_crystal": "Calmium Crystal",
+      "item.calmoverse.engeneer_armor_helmet": "Engeneer Armor Helmet",
       "block.calmoverse.soul_maple_log": "Soul Maple Log",
       "block.calmoverse.soul_maple_fence_gate": "Soul Maple Planks",
       "block.calmoverse.ash": "Ash",
+      "item.calmoverse.engeneer_armor_chestplate": "Engeneer Armor Chestplate",
       "block.calmoverse.soul_maple_planks": "Soul Maple Planks",
       "item.calmoverse.soul_armor_chestplate": "Soul Armor Chestplate",
       "block.calmoverse.burned_fence_gate": "Stripped Burned Wood",
@@ -1085,11 +1456,13 @@
       "block.calmoverse.burned_stairs": "Stripped Burned Wood",
       "item.calmoverse.soul_armor_boots": "Soul Armor Boots",
       "block.calmoverse.flame_orose": "Flame Orose",
+      "item.calmoverse.astral_slime_spawn_egg": "Soul Spawn Egg",
       "block.calmoverse.soul_maple_trapdoor": "Soul Maple Planks",
       "block.calmoverse.soul_maple_wood": "Soul Maple Log",
       "block.calmoverse.globe_flower": "Globe Flower",
       "block.calmoverse.flames_tear_stone": "Flaiming Roots",
       "block.calmoverse.soul_maple_leaves": "Soul Maple Leaves",
+      "block.calmoverse.alexandrium": "Alexandrium",
       "block.calmoverse.burned_wood": "Burned Wood",
       "block.calmoverse.soul_maple_button": "Soul Maple Planks",
       "block.calmoverse.soul_maple_stairs": "Soul Maple Planks",
@@ -1138,6 +1511,15 @@
               {
                 "name": "Ash",
                 "children": []
+              },
+              {
+                "name": "procedure",
+                "children": [
+                  {
+                    "name": "geyser",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -1146,7 +1528,12 @@
             "children": [
               {
                 "name": "Portal",
-                "children": []
+                "children": [
+                  {
+                    "name": "procedure",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -1166,6 +1553,14 @@
         "children": [
           {
             "name": "Ore",
+            "children": []
+          },
+          {
+            "name": "Astral",
+            "children": []
+          },
+          {
+            "name": "artifact",
             "children": []
           }
         ]
@@ -1190,7 +1585,17 @@
       },
       {
         "name": "Weapons",
-        "children": []
+        "children": [
+          {
+            "name": "soul",
+            "children": [
+              {
+                "name": "procedure",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Tools",
@@ -1203,6 +1608,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "SoulMage",
+            "children": []
           }
         ]
       },
@@ -1222,6 +1631,14 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "enchantments",
+        "children": []
+      },
+      {
+        "name": "Entity",
+        "children": []
       }
     ]
   },
@@ -1237,8 +1654,13 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "perfmods",
+      "etf__emf",
+      "mod_menu"
+    ],
     "currentGenerator": "fabric-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.calmoverse",
     "lockBaseModFiles": false
   },

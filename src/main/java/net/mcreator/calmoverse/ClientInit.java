@@ -14,6 +14,7 @@ package net.mcreator.calmoverse;
 
 import net.mcreator.calmoverse.init.CalmoverseModParticleTypes;
 import net.mcreator.calmoverse.init.CalmoverseModModels;
+import net.mcreator.calmoverse.init.CalmoverseModEntityRenderers;
 import net.mcreator.calmoverse.init.CalmoverseModBlocks;
 
 import net.fabricmc.api.Environment;
@@ -30,6 +31,6 @@ public class ClientInit implements ClientModInitializer {
 		CalmoverseModBlocks.clientLoad();
 
 		CalmoverseModModels.load();
-
+		CalmoverseModEntityRenderers.load();
 	}
 }

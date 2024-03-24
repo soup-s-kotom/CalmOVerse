@@ -7,11 +7,14 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 
+import net.mcreator.calmoverse.procedures.BurnedValleyPortalTpToBurnedWalleyProcedure;
 import net.mcreator.calmoverse.init.CalmoverseModBlocks;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -22,7 +25,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class BurnedValleyPortalBlock extends Block {
-	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f);
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f).noCollission();
 
 	public BurnedValleyPortalBlock() {
 		super(PROPERTIES);
@@ -39,6 +42,12 @@ public class BurnedValleyPortalBlock extends Block {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
+	@Override
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
+		super.entityInside(blockstate, world, pos, entity);
+		BurnedValleyPortalTpToBurnedWalleyProcedure.execute(entity);
 	}
 
 	@Environment(EnvType.CLIENT)

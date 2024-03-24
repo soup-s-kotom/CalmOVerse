@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "calmoverse:block/alexandrium",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "calmoverse:block/alexandrium"
+    },
+    "axis=z": {
+      "model": "calmoverse:block/alexandrium",
+      "x": 90
+    }
+  }
+}

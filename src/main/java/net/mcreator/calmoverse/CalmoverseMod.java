@@ -20,6 +20,7 @@ import net.mcreator.calmoverse.init.CalmoverseModProcedures;
 import net.mcreator.calmoverse.init.CalmoverseModParticleTypes;
 import net.mcreator.calmoverse.init.CalmoverseModPaintings;
 import net.mcreator.calmoverse.init.CalmoverseModItems;
+import net.mcreator.calmoverse.init.CalmoverseModEntities;
 import net.mcreator.calmoverse.init.CalmoverseModBlocks;
 import net.mcreator.calmoverse.init.CalmoverseModBiomes;
 
@@ -35,6 +36,7 @@ public class CalmoverseMod implements ModInitializer {
 		CalmoverseModParticleTypes.load();
 		CalmoverseModTabs.load();
 
+		CalmoverseModEntities.load();
 		CalmoverseModBlocks.load();
 		CalmoverseModItems.load();
 

@@ -25,6 +25,7 @@ import net.mcreator.calmoverse.block.SoulMapleDoorBlock;
 import net.mcreator.calmoverse.block.SoulMapleButtonBlock;
 import net.mcreator.calmoverse.block.OverheatedAshBlock;
 import net.mcreator.calmoverse.block.IgniyBlock;
+import net.mcreator.calmoverse.block.HiddenChaosFragmentBlock;
 import net.mcreator.calmoverse.block.HeatedAshBlock;
 import net.mcreator.calmoverse.block.GlobeFlowerBlock;
 import net.mcreator.calmoverse.block.GeyserBlock;
@@ -48,6 +49,7 @@ import net.mcreator.calmoverse.block.BurnedDoorBlock;
 import net.mcreator.calmoverse.block.BurnedButtonBlock;
 import net.mcreator.calmoverse.block.AstralBasaltBlock;
 import net.mcreator.calmoverse.block.AshBlock;
+import net.mcreator.calmoverse.block.AlexandriumBlock;
 import net.mcreator.calmoverse.CalmoverseMod;
 
 public class CalmoverseModBlocks {
@@ -90,6 +92,8 @@ public class CalmoverseModBlocks {
 	public static Block CHAOS_FRAGMENT;
 	public static Block CALMIUM_CRYSTALS;
 	public static Block ASTRAL_BASALT;
+	public static Block HIDDEN_CHAOS_FRAGMENT;
+	public static Block ALEXANDRIUM;
 
 	public static void load() {
 		SOUL_MAPLE_WOOD = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "soul_maple_wood"), new SoulMapleWoodBlock());
@@ -131,6 +135,8 @@ public class CalmoverseModBlocks {
 		CHAOS_FRAGMENT = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "chaos_fragment"), new ChaosFragmentBlock());
 		CALMIUM_CRYSTALS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "calmium_crystals"), new CalmiumCrystalsBlock());
 		ASTRAL_BASALT = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "astral_basalt"), new AstralBasaltBlock());
+		HIDDEN_CHAOS_FRAGMENT = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "hidden_chaos_fragment"), new HiddenChaosFragmentBlock());
+		ALEXANDRIUM = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CalmoverseMod.MODID, "alexandrium"), new AlexandriumBlock());
 	}
 
 	public static void clientLoad() {
@@ -173,5 +179,7 @@ public class CalmoverseModBlocks {
 		ChaosFragmentBlock.clientInit();
 		CalmiumCrystalsBlock.clientInit();
 		AstralBasaltBlock.clientInit();
+		HiddenChaosFragmentBlock.clientInit();
+		AlexandriumBlock.clientInit();
 	}
 }

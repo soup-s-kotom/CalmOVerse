@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calmoverse:block/astral_stone1",
+    "particle": "calmoverse:block/astral_stone1"
+  },
+  "render_type": "solid"
+}

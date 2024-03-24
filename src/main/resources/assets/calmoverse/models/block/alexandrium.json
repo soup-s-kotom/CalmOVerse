@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "calmoverse:block/alexandrium_top.png",
+    "up": "calmoverse:block/alexandrium_top.png",
+    "north": "calmoverse:block/alexandrium_side",
+    "east": "calmoverse:block/alexandrium_side",
+    "south": "calmoverse:block/alexandrium_side",
+    "west": "calmoverse:block/alexandrium_side",
+    "particle": "calmoverse:block/alexandrium_top.png"
+  },
+  "render_type": "solid"
+}
